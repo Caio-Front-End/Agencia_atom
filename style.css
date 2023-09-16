@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+main {
+    background-color: #7070701a
+}
+
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Background video */
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    box-shadow: 0px 0px 20px black;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#header .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#header .col h1 {
+    display: none;
+}
+
+#header .col img {
+    height: 150%;
+}
+
+#header .col li {
+    display: inline;
+    margin-left: 1em;
+}
+
+#header .col li a {
+    text-decoration: none;
+    padding: 0.2em 0px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .55s ease;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#header .col li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#header .col li img {
+    height: 15px;
+}
+
+/* Header - sobre */
+
+#title .right {
+    padding: 5em 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#title .right h2 {
+    font-size: 2.6em;
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+#title .right p {
+    width: 35em;
+    color: rgb(96, 200, 218);
+    margin-bottom: 3em;
+}
+
+#title .right button {
+    width: 30%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 0px;
+    transition: all .40s ease;
+}
+
+#title .right button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#title .left article h3 {
+    color: rgb(115, 153, 223);
+    text-shadow: 0px 0px 5px black;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+#title .left article p {
+    color: #fff;
+}
+
+/* Main content */
+
+#serviços h2 {
+    text-align: center;
+    padding: 48px 0px;
+    font-size: 2.6em;
+    color: #220e36;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+}
+
+#serviços .card {
+    margin-bottom: 36px;
+    transition: all .30s ease;
+    position: relative;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
+    padding: 6px;
+    height: 230px;
+}
+
+#serviços .card:hover {
+    scale: 1.03;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+}
+
+#serviços .card .icon {
+    width: 50px;
+    height: 50px;
+}
+
+#serviços .card img {
+    height: 100%;
+}
+
+#serviços .card h4 {
+    font-weight: 600;
+}
+
+#serviços .card p {
+    font-style: italic;
+}
+
+#serviços .card button {
+    border: none;
+    width: 150px;
+    margin: 0 auto;
+    padding: 6px 0px;
+    border-radius: 7px;
+    transition: all .55s ease;
+    display: none;
+}
+
+/* Linha divisória */
+
+.divisao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+}
+
+.divisao .up {
+    height: 1px;
+    width: 45%;
+    background-color: red;
+}
+
+.divisao img {
+    height: 100px;
+}
+
+.divisao .down {
+    height: 1px;
+    width: 45%;
+    background-color: blue;
+}
+
+/* Ads */
+
+#ads {
+    margin-top: 36px;
+}
+
+#ads .col h2 {
+    font-size: 2em;
+    color: #220e36;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+}
+
+#ads .col p {
+    margin-bottom: 36px;
+}
+
+#ads .col h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333c5;
+    margin-bottom: 18px;
+}
+
+#ads .col li {
+    list-style: none;
+    margin-left: -34px;
+    margin-bottom: 12px;
+}
+
+#ads .left img {
+    background-color: rgba(23, 212, 23, 0.671);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+#ads .flutuar img {
+    background-size: cover;
+    transition: all .55s ease;
+    animation: flutuar 2s alternate infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Sobre */
+
+#sobre {
+    background-color: #194e5e;
+}
+
+#sobre .right {
+    padding: 50px 0px;
+}
+
+#sobre .right h2 {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+}
+
+#sobre .right p {
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+#sobre .right button {
+    width: 100%;
+    padding: 8px 0px;
+    border: none;
+    box-shadow: 5px 5px 0px black;
+    background-color: #fff;
+    color: #000;
+    transition: all .20s ease-in;
+}
+
+#sobre .right button:hover {
+    background-color: #ffffffd5;
+    color: #000;
+}
+
+/* Sobre - Cards */
+
+#sobre .row .col .card {
+    margin-bottom: 24px;
+    box-shadow: 5px 5px 0px black ;
+}
+
+#sobre .row .col .card h3 {
+    font-weight: 600;
+}
+
+#sobre .row .col .card p {
+    font-style: italic;
+}
+
+/* Contato */
+
+#contato {
+    background-color: #000000e3;
+}
+
+#contato .row {
+    padding: 50px 0px;
+}
+
+#contato .row .left {
+    background-color: #3333339c;
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+
+#contato .row .left h2 {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+#contato .row .left p {
+    color: #fff;
+}
+
+#contato .row .left form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#contato .row .left label {
+    color: #fff;
+}
+
+#contato .row .left input {
+    margin-bottom: 18px;
+}
+
+#contato .row .left textarea {
+    resize: none;
+    margin-bottom: 24px;
+}
+
+#contato .row .left button {
+    width: 100%;
+    padding: 4px 0px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(53, 53, 221);
+}
+
+#contato .row .left button:hover {
+    background-color: rgb(73, 73, 219);
+}
+
+/* Contato right */
+
+#contato .row .right {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#contato .row .right h2 {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#contato .row .right img {
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+#contato .row .right li {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+/* Button whatsapp */
+
+#whats {
+    height: 45px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-size: cover;
+    animation: flutuar 1s alternate infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
